@@ -1,0 +1,28 @@
+.replyBarContainer {
+    grid-column: 2;
+    grid-row: 3;
+    color: lightgray;
+    font-size: 11px;
+  }
+
+.replyBtn {
+    margin-right: 15px;
+}
+  
+.repliesText {
+    color: gray;
+}
+ 
+.vote {
+    margin-left: 15px;
+}
+
+button {
+    background: none!important;
+    border: none;
+    padding: 0;
+    color: lightgray;
+    cursor: pointer;
+    font-size: 11px;
+    margin-right: 5px
+  }

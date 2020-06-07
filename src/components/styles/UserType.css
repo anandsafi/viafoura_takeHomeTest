@@ -1,0 +1,21 @@
+.userType {
+    grid-column: 2;
+    grid-row: 1;
+    padding-bottom: 10px;
+}
+  
+.title {
+    background-color: black;
+    padding: 1px 10px;
+    color: white;
+    line-height: 10px;
+    border-radius: 500px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+  
+.time {
+    color: grey;
+    font-size: 11px;
+    text-transform: uppercase;
+}
