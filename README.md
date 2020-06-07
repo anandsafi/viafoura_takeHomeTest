@@ -2,67 +2,64 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, upon clone or download:
 
-### `yarn start`
+
+### `npm install`
+
+Install Dependencies
+
+### `npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the test suite for the App
 
-### `yarn build`
+## Project Structure
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application is structured under the src directory.
+-----
+Assets folder contains:
+1)  User Avatar Image
+-----
+Components folder contains:
+1)  App(Main Wrapper component)
+2)  Comment Box(Comment Parent Component)
+3)  CommentText (Child component for comment text)
+4)  UserAvatar (Child component for user avatar image)
+5)  UserType(Child component for user specific information)
+6)  ReplyBar(Child component for interactive reply functionality)
+7)  Styles directory for component specific styles
+-----
+Configurations folder contains:
+1)  Comment Level Configuratin Data
+-----
+Tests folder contains:
+1)  Spec file for test scenarios
+-----
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Functionality
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application supports the following key features:
+1) Ability to render a comment component from config data
+2) Ability to pass data downstream to child components and render each child component
+3) Ability to interact with upvote and downvote reply functionality
+4) Ability to make lighter elements visibly darker on hover
+5) Ability to display a user avatar image
 
-### `yarn eject`
+## Error Handling
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The component component accounts for an edge case when no config data is available 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technical Choices + Enhancements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- The application has been built using a combination of class based and functional-based(App.jsx) component approaches to demonstrate conceptual knowledge. 
+- Tests have been added to demonstrate TDD mindset and ability to write specs
+- A future extension for the above approach would be to leverage axios/ fetch for defining the endpoints and getting comment data from a DB and user avatar images from a CDN/ AWS S3 bucket
+- Styling has been kept to minimal to emphasize of simplicity and demosntrating clear UI as per requirement. It can easily be extended with animations and more visual appeal with the help of a designer.
